@@ -20,7 +20,7 @@ pipeline {
           //Stash the war apackage
           print ("Preparing the war package to copy to the deploy server")
           dir("/home/ubuntu/build_server/workspace/declarative_pipeline_example2/target") {
-            //stash( includes:"/home/ubuntu/build_server/workspace/declarative_pipeline_example2/target/hello-world-webapp.war", name: "hello-world-project")
+            //stash( includes:"/home/ubuntu/build_server/workspace/declarative_pipeline_example2/target/")
             stash( includes:"hello-world-webapp.war", name: "hello-world-project")
           }
         }
