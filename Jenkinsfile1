@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage ("Build the maven war package") {
       steps {
-        node ("build_server") {
+        node ("build-server") {
           
           //Checkout the SCM
           print ("Downloading the source code from GitHub")
